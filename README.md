@@ -10,6 +10,9 @@ Some boilerplate stuff, which I need frequently to get my projects running smoot
 -   [prettier/](prettier/README.md)
     -   `.prettierrc` file
     -   explanation how to setup and why
+-   [ssh/](ssh/README.md)
+    -   `.profile` file
+    -   ssh key with passphrase: SSO for SSH keys
 -   [vscode/](vscode/README.md)
     -   VSCode snippets to type less code
 
