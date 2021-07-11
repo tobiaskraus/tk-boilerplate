@@ -1,5 +1,7 @@
 # tk-boilerplate/vscode
 
+## Setup Snippets
+
 Configuring code snippets in VSCode can speed up coding big times.
 
 There are 2 options:
@@ -21,74 +23,12 @@ Just type the shortcut, accept the autocomplete with TAB key and fill wherever t
 
 ### TypeScript
 
-`cl + TAB:` simple `console.log()`;
-
-```json
-"console.log": {
-    "prefix": "cl",
-    "scope": "javascript,typescript",
-    "body": ["console.log(\"$1\");"]
-},
-```
+`cl`: simple `console.log();`
 
 ### React (with TypeScript)
 
-`compfile + TAB:` boilerplate component code for a freshly created `tsx` file
+`compfile`: boilerplate component code for a freshly created `tsx` file
 
-```json
-"React Function Component File": {
-    "prefix": "compfile",
-    "scope": "typescriptreact",
-    "body": [
-        "import React, { FunctionComponent } from \"react\";",
-        "",
-        "interface $1Props {",
-        "    className?: string;",
-        "}",
-        "",
-        "const $1: FunctionComponent<$1Props> = (props) => {",
-        "    return (",
-        "        $2",
-        "    );",
-        "};",
-        "",
-        "export default $1;"
-    ]
-},
-```
+`compp`: Function Component with props
 
-`compp + TAB:` Function Component with props
-
-```json
-"React Function Component with props": {
-    "prefix": "compp",
-    "scope": "typescriptreact",
-    "body": [
-        "interface $1Props {",
-        "    className?: string;",
-        "}",
-        "",
-        "const $1: FunctionComponent<$1Props> = (props) => {",
-        "    return (",
-        "        $2",
-        "    );",
-        "};"
-    ]
-},
-```
-
-`comp + TAB:` Function Component without props
-
-```json
-"React Function Component without props": {
-    "prefix": "comp",
-    "scope": "typescriptreact",
-    "body": [
-        "const $1: FunctionComponent = () => {",
-        "    return (",
-        "        $2",
-        "    );",
-        "};"
-    ]
-},
-```
+`comp`: Function Component without props
