@@ -1,6 +1,6 @@
 # tk-boilerplate/vscode
 
-Configuring code snippets in vscode can speed up coding big times.
+Configuring code snippets in VSCode can speed up coding big times.
 
 There are 2 options:
 
