@@ -11,7 +11,9 @@ There are 2 options:
 
 Both can be done easily with `CMD+SHIFT+P > Configure User Snippets`.
 
-Or just copy the `*.code-snippets` files from this folder.
+Copy what you need from the `*.code-snippets` files of this folder.
+
+You can remove the `scope` props if you paste it in your user-level snippets (langauge specific).
 
 ## Usage
 

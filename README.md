@@ -4,11 +4,14 @@ Some boilerplate stuff, which I need frequently to get my projects running smoot
 
 ## Table of content
 
-- [prettier/](prettier/README.md)
-  - explanation how to setup and why
-  - `.prettierrc` file
-- [vscode/](vscode/README.md)
-  - VSCode snippets to type less code
+-   [editorconfig/](editorconfig/README.md)
+    -   `.editorconfig` file
+    -   explanation
+-   [prettier/](prettier/README.md)
+    -   `.prettierrc` file
+    -   explanation how to setup and why
+-   [vscode/](vscode/README.md)
+    -   VSCode snippets to type less code
 
 ## Why is this public?
 
