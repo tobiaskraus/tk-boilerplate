@@ -11,6 +11,12 @@ Both can be done easily with `CMD+SHIFT+P > Configure User Snippets`.
 
 Or just copy the `*.code-snippets` files from this folder.
 
+## Usage
+
+Just type the shortcut, accept the autocomplete with TAB key and fill wherever the Snippet cursor brings you.
+
+![snippet demo](../.docu-assets/vscode-snippet-compfile.gif)
+
 ## Snippets
 
 ### TypeScript
