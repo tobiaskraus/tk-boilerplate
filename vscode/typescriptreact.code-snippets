@@ -1,47 +1,47 @@
 {
-  "React Function Component File": {
-    "prefix": "compfile",
-    "scope": "typescriptreact",
-    "body": [
-      "import React, { FunctionComponent } from \"react\";",
-      "",
-      "interface $1Props {",
-      "    className?: string;",
-      "}",
-      "",
-      "const $1: FunctionComponent<$1Props> = (props) => {",
-      "    return (",
-      "        $2",
-      "    );",
-      "};",
-      "",
-      "export default $1;"
-    ]
-  },
-  "React Function Component with props": {
-    "prefix": "compp",
-    "scope": "typescriptreact",
-    "body": [
-      "interface $1Props {",
-      "    className?: string;",
-      "}",
-      "",
-      "const $1: FunctionComponent<$1Props> = (props) => {",
-      "    return (",
-      "        $2",
-      "    );",
-      "};"
-    ]
-  },
-  "React Function Component without props": {
-    "prefix": "comp",
-    "scope": "typescriptreact",
-    "body": [
-      "const $1: FunctionComponent = () => {",
-      "    return (",
-      "        $2",
-      "    );",
-      "};"
-    ]
-  }
+    "React Function Component File": {
+        "prefix": "compfile",
+        "scope": "typescriptreact",
+        "body": [
+            "import React, { FunctionComponent } from \"react\";",
+            "",
+            "interface $1Props {",
+            "    className?: string;",
+            "}",
+            "",
+            "const $1: FunctionComponent<$1Props> = (props) => {",
+            "    return (",
+            "        $2",
+            "    );",
+            "};",
+            "",
+            "export default $1;"
+        ]
+    },
+    "React Function Component with props": {
+        "prefix": "compp",
+        "scope": "typescriptreact",
+        "body": [
+            "interface $1Props {",
+            "    className?: string;",
+            "}",
+            "",
+            "const $1: FunctionComponent<$1Props> = (props) => {",
+            "    return (",
+            "        $2",
+            "    );",
+            "};"
+        ]
+    },
+    "React Function Component without props": {
+        "prefix": "comp",
+        "scope": "typescriptreact",
+        "body": [
+            "const $1: FunctionComponent = () => {",
+            "    return (",
+            "        $2",
+            "    );",
+            "};"
+        ]
+    }
 }

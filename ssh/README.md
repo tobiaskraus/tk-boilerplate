@@ -5,7 +5,7 @@
 I use a passphrase on my ssh key. This is great for security (simply stealing my private key file will not give any access), but it comes with a downside:
 
 -   Everytime I verify myself via ssh (e.g. I push changes via `git push`) I am forced to type in my passphrase again.
--   VSCode does not expect a command prompt which asks my passphrase when I use their integrated git features to push my code and therefore fails (I guess there are problems with other programs which use ssh in the background as well).
+-   VSCode does not expect a command prompt which asks for my passphrase when I use their integrated git features to push my code and therefore fails (I guess there are problems with other programs which use ssh in the background as well).
 
 To solve this, add this to your `.profile` file in your user folder:
 

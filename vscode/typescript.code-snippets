@@ -1,7 +1,7 @@
 {
-  "console.log": {
-    "prefix": "cl",
-    "scope": "javascript,typescript",
-    "body": ["console.log(\"$1\");"]
-  }
+    "console.log": {
+        "prefix": "cl",
+        "scope": "javascript,typescript",
+        "body": ["console.log(\"$1\");"]
+    }
 }
