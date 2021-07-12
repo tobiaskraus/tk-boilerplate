@@ -1,4 +1,15 @@
 {
+    "React Function Component without props": {
+        "prefix": "comp",
+        "scope": "typescriptreact",
+        "body": [
+            "const $1: FunctionComponent = () => {",
+            "    return (",
+            "        $2",
+            "    );",
+            "};"
+        ]
+    },
     "React Function Component File": {
         "prefix": "compfile",
         "scope": "typescriptreact",
@@ -27,17 +38,6 @@
             "}",
             "",
             "const $1: FunctionComponent<$1Props> = (props) => {",
-            "    return (",
-            "        $2",
-            "    );",
-            "};"
-        ]
-    },
-    "React Function Component without props": {
-        "prefix": "comp",
-        "scope": "typescriptreact",
-        "body": [
-            "const $1: FunctionComponent = () => {",
             "    return (",
             "        $2",
             "    );",
