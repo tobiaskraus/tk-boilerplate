@@ -29,8 +29,10 @@ Just type the shortcut, accept the autocomplete with TAB key and fill wherever t
 
 ### React (with TypeScript)
 
+`comp`: Function Component without props
+
 `compfile`: boilerplate component code for a freshly created `tsx` file
 
 `compp`: Function Component with props
 
-`comp`: Function Component without props
+`slicefile`: Redux (toolkik) slice file (with its reducers and state)

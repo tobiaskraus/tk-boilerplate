@@ -43,5 +43,34 @@
             "    );",
             "};"
         ]
+    },
+    "Slice file": {
+        "prefix": "slicefile",
+        "scope": "typescript",
+        "body": [
+            "import { createSlice, PayloadAction } from '@reduxjs/toolkit';",
+            "",
+            "export interface ${1/(.)/${1:/upcase}/}State {",
+            "    $2;",
+            "}",
+            "",
+            "export const initialState: ${1/(.)/${1:/upcase}/}State = {",
+            "",
+            "};",
+            "",
+            "export const ${1/(.)/${1:/downcase}/}Slice = createSlice({",
+            "    name: '${1/(.)/${1:/downcase}/}',",
+            "    initialState,",
+            "    reducers: {",
+            "        $3,",
+            "    }",
+            "});",
+            "",
+            "export const { $4 } = ${1/(.)/${1:/downcase}/}Slice.actions;",
+            "",
+            "export default ${1/(.)/${1:/downcase}/}Slice.reducer;",
+            ""
+        ],
+        "description": "boilerplate for a new Redux Toolkik Slice file"
     }
 }
