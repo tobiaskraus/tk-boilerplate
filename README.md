@@ -13,7 +13,10 @@ Some boilerplate stuff, which I need frequently to get my projects running smoot
 -   [ssh/](ssh/README.md)
     -   `.profile` file
     -   ssh key with passphrase: SSO for SSH keys
+-   [shell/](shell/README.md)
+    -   tools I use and love
 -   [vscode/](vscode/README.md)
+    -   extensions I use
     -   VSCode snippets to type less code
 
 ## Why is this public?

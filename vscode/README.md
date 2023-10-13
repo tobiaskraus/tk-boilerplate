@@ -1,5 +1,16 @@
 # tk-boilerplate/vscode
 
+## extensions
+
+-   EditorConfig for VS Code
+-   ESLint
+-   Prettier - Code formatter
+-   Pretty TypeScript Errors
+-   GitHub Copilot
+-   change-case
+-   Dark++ Italic (theme)
+-   ... more depending on project (syntax highlighting etc.)
+
 ## Setup Snippets
 
 Configuring code snippets in VSCode can speed up coding big times.
