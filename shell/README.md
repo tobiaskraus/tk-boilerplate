@@ -12,3 +12,5 @@ I use and love:
     -   command line tool that allows you to jump quickly to directories that you have visited frequently in the past, or recently -- but most often a combination of the two (a concept known as "frecency").
 -   [lazydocker](https://github.com/jesseduffield/lazydocker)
     -   A simple terminal UI for both docker and docker-compose
+-   [ripgrep (rg)](https://github.com/BurntSushi/ripgrep)
+    -   search tool that recursively searches the current directory for a regex pattern
