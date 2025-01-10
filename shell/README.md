@@ -1,6 +1,8 @@
 # shell
 
-## tools
+Terminal: [Ghostty](https://github.com/ghostty-org/ghostty)
+
+## shell tools
 
 I use and love:
 
