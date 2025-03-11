@@ -1,0 +1,9 @@
+# default packages to get installed each time you install a new node version
+
+# [see docu](https://github.com/nvm-sh/nvm?tab=readme-ov-file#default-global-packages-from-file-while-installing)
+
+# place file in $NVM_DIR/default-packages
+
+yarn
+typescript
+prettier
