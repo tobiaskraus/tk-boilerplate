@@ -14,7 +14,16 @@ If your project needs often to import svg assets, then I recommend this option.
 
 **Preparation**
 
-Copy the `svg-to-react` folder into your project root.
+Copy the `svg-to-react` folder into your project root. Manually or with this command:
+
+```sh
+git clone --depth 1 --filter=blob:none --sparse https://github.com/tobiaskraus/tk-boilerplate.git && \
+cd tk-boilerplate && \
+git sparse-checkout set svg/svg-to-react && \
+cd .. && \
+mv tk-boilerplate/svg/svg-to-react ./ && \
+rm -rf tk-boilerplate
+```
 
 Install `@svgr/cli` with npm or whatever package-manager you use.
 
