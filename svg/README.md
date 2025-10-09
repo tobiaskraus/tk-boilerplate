@@ -4,13 +4,19 @@
 
 copy svg files in your project and transform them to react components.
 
-### Option A: Use it directly in your project
+### Requirements
+
+-   Node.js installed
+
+### Option A: Use it directly in your JS project
 
 If your project needs often to import svg assets, then I recommend this option.
 
 **Preparation**
 
 Copy the `svg-to-react` folder into your project root.
+
+Install `@svgr/cli` with npm or whatever package-manager you use.
 
 Add this to your package.json:
 
@@ -33,4 +39,8 @@ Add this to your package.json:
 
 ### Option B: Use it somewhere outside your projects
 
-Same as above, but place the folder somewhere where you want and adjust the ouput directory
+Same as above, besides:
+
+-   place the folder somewhere where you want
+-   create there a new package.json (`npm init -y`) and install there "@svgr/cli"
+-   adjust the ouput directory
