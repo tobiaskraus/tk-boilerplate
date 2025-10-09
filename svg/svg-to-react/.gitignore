@@ -1,0 +1,7 @@
+# Ignore all files in these directories
+inbox/*
+finished/*
+
+# But keep the .gitkeep files
+!inbox/.gitkeep
+!finished/.gitkeep
