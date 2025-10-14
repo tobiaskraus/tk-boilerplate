@@ -1,8 +1,7 @@
 # svg-to-react
 
-## import svg (icons) from figma
+## import svg (icons)
 
--   Select in figma the icon component and export it as svg
 -   paste svg file(s) into `/svg-to-react/inbox/` (files are .gitignored)
 -   run `npm run "transform-svgs`
 -   DONE!

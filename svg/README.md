@@ -53,3 +53,73 @@ Same as above, besides:
 -   place the folder somewhere where you want
 -   create there a new package.json (`npm init -y`) and install there "@svgr/cli"
 -   adjust the ouput directory
+
+### Limitations
+
+#### Other elements in template, needs to be in AST syntax
+
+Wrapping the icon in another element in JSX syntax breaks the transformer.
+
+Example: wrapping in MUI's `SvgIcon`:
+
+```tsx
+return tpl`
+    import { SvgIcon, type SvgIconOwnProps } from "@mui/material";
+
+    const SvgComponent = (props: SvgIconOwnProps) => (
+        <SvgIcon {...props}>
+            ${variables.jsx}
+        </SvgIcon>
+    );
+
+    export { SvgComponent as ${componentName} };
+`;
+```
+
+Wrong! The `<SvgIcon>` cannot be used inside `tpl` template:
+
+```error
+Error: /Users/username/path/to/project/svg-transformer/inbox/icon-name.svg: Unknown substitution "$$BABEL_TPL$0" given
+    at /Users/username/path/to/project/node_modules/@babel/template/lib/populate.js:33:
+```
+
+But replacing `tpl` template with a normal string literal causes error:
+
+```error
+ ...icon-name.svg: unknown node of type undefined with constructor "String"
+ ...@babel/generator/lib/printer.js:366:13)
+```
+
+Solution:
+
+```js
+// Create SvgIcon wrapper as AST
+const svgIconJsx = {
+    type: "JSXElement",
+    openingElement: {
+        type: "JSXOpeningElement",
+        name: { type: "JSXIdentifier", name: "SvgIcon" },
+        attributes: [
+            {
+                type: "JSXSpreadAttribute",
+                argument: { type: "Identifier", name: "props" },
+            },
+        ],
+        selfClosing: false,
+    },
+    closingElement: {
+        type: "JSXClosingElement",
+        name: { type: "JSXIdentifier", name: "SvgIcon" },
+    },
+    children: [variables.jsx],
+    selfClosing: null,
+};
+
+return tpl`
+    import { SvgIcon, type SvgIconOwnProps } from "@mui/material";
+
+    const SvgComponent = (props: SvgIconOwnProps) => ${svgIconJsx};
+
+    export { SvgComponent as ${componentName} };
+`;
+```
