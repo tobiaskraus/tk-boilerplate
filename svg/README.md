@@ -60,7 +60,7 @@ Same as above, besides:
 
 Wrapping the icon in another element in JSX syntax breaks the transformer.
 
-Example: wrapping in MUI's `SvgIcon`:
+WRONG example: wrapping in MUI's `SvgIcon`:
 
 ```tsx
 return tpl`
@@ -76,7 +76,7 @@ return tpl`
 `;
 ```
 
-Wrong! The `<SvgIcon>` cannot be used inside `tpl` template:
+Problem: The `<SvgIcon>` cannot be used inside `tpl` template:
 
 ```error
 Error: /Users/username/path/to/project/svg-transformer/inbox/icon-name.svg: Unknown substitution "$$BABEL_TPL$0" given
@@ -123,3 +123,6 @@ return tpl`
     export { SvgComponent as ${componentName} };
 `;
 ```
+
+There should be a more elegeant solution to write JSX in the template but I couldn't find any way.
+Check https://github.com/gregberge/svgr/issues
