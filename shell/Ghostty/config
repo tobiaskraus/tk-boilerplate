@@ -1,0 +1,5 @@
+# This is the configuration file for Ghostty.
+
+keybind = cmd+r=prompt_surface_title
+
+theme = dark:Catppuccin Mocha,light:GitHub Light Default
