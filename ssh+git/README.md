@@ -11,7 +11,7 @@ I split my repos locally into subfolders ('customer-a', 'customer-b', 'private')
 
 I use different git configs for each subfolder. But git reads only a global `~/.gitconfig`.
 
-My `~/.gitconfig`
+My `~/.gitconfig`:
 
 ```config
 [user]
@@ -20,9 +20,18 @@ My `~/.gitconfig`
 	email = {my private email}
     signingkey = ~/.ssh/git_signing_ed25519.pub
 [includeIf "gitdir:~/dev/customer-a/"]
-    email = {other email}
+    path = ~/dev/{subfolder}/.gitconfig
 # some other stuff
 ```
+
+And then a create a `.gitconfig` in each of those subfolders with:
+
+```config
+[user]
+	email = {my business email for this remote repo}
+```
+
+If you only have a few repos, it's easier to set the different email only on repo level: `git config user.email your@email.example`.
 
 ### Signing git commits
 
