@@ -24,3 +24,9 @@ I use and love:
         -   `mise use -g node@22` (set a global default Node version for any new shell)
         -   `mise use node@22` (pin a version in the project: creates `mise.toml`). Existing `.nvmrc` / `.node-version` files are also read (enable with `mise settings add idiomatic_version_file_enable_tools node`)
         -   `mise install` installs everything the project pins; `mise ls-remote node` lists available versions
+-   [ni](https://github.com/antfu-collective/ni) (`@antfu/ni`)
+    -   uses the right package manager (npm, yarn, pnpm, bun, deno) for a project by looking at its lockfile / `packageManager` field, so you don't have to remember which one a project uses
+    -   install: `npm i -g @antfu/ni` (or `brew install ni`)
+    -   useful:
+        -   `ni` (install), `ni vue` (add a dependency), `ni -D vitest` (add a dev dependency)
+        -   `nr dev` (run a script), `nlx vitest` (execute a package), `nun vue` (uninstall), `nci` (clean install)
