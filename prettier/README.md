@@ -2,6 +2,8 @@
 
 Prettier is a code formatter for JavaScript, TypeScript, JSON, HTML, CSS, ...
 
+Note: I haven't tried [oxfmt](https://oxc.rs/docs/guide/usage/formatter) yet. It's a Prettier-compatible formatter that is faster and probably the better choice for large code bases.
+
 ## I use them all: ESlint, prettier and editorconfig
 
 Even though [ESLint](https://eslint.org/) can also do some formatting, ESLint still focuses on linting and there are many reasons why it's best to work with both of them.
